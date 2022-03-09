@@ -1,0 +1,143 @@
+.hero {
+  background-image: url("../../assets/images/hero-bg.png");
+  padding-bottom: 290px;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__left,
+.hero__right {
+  width: 48%;
+  flex-basis: 48%;
+}
+
+.hero__greeting {
+  padding: 16px 30px;
+  width: max-content;
+
+  background-color: #094556;
+  border-radius: 30px;
+}
+
+.hero__title {
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 80px;
+  color: var(--colors-light);
+}
+.hero__description {
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  color: var(--colors-secondary);
+}
+
+.hero__greeting p {
+  font-family: Schoolbell, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+
+  color: var(--colors-light);
+}
+
+.hero__buttons {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero__hire-btn {
+  padding: 16px 35px;
+  background-color: #ffa63a;
+  border-radius: 25px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  color: var(--colors-light);
+}
+
+.hero__works-btn {
+  margin-left: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  color: #b6cdd5;
+  text-decoration: none;
+}
+
+.hero__right {
+  position: relative;
+}
+
+.hero__man img {
+  width: 120%;
+  margin-left: -20%;
+}
+
+/* testimonial */
+.hero__testimonial {
+  width: 300px;
+  height: 170px;
+  position: absolute;
+  top: calc(50% - 85px);
+  right: -150px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  backdrop-filter: blur(58px);
+  border-radius: 20px;
+  padding: 20px 25px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--colors-light);
+}
+
+.hero__testimonial-author {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 15px 4fr;
+  grid-template-rows: repeat(2, 23px);
+  grid-template-areas:
+    "avatar . name"
+    "avatar . job";
+}
+
+.hero__testimonial-avatar {
+  grid-area: avatar;
+}
+
+.hero__testimonial-name {
+  grid-area: name;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: var(--colors-light);
+}
+
+.hero__testimonial-job {
+  grid-area: job;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  color: #a1b5bb;
+}

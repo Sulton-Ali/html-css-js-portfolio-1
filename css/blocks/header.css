@@ -1,0 +1,65 @@
+.header {
+  background-image: url(../../assets/images/hero-bg.png);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.navbar__list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #a1b5bb;
+}
+
+.navbar__item {
+  position: relative;
+  margin-right: 50px;
+}
+
+.navbar__item::after {
+  content: "";
+  position: absolute;
+  background-color: #a1b5bb;
+  bottom: -3px;
+  height: 3px;
+  left: 0;
+  width: 0;
+  transition: all 0.3s linear;
+}
+
+.navbar__item:hover.navbar__item::after,
+.navbar__item.active::after {
+  width: 100%;
+}
+
+.navbar__item:last-child {
+  margin-right: 0;
+}
+
+.header__contact-btn {
+  padding: 15px 35px;
+  background-color: #145e76;
+  border-radius: 25px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 29px;
+  color: var(--colors-light);
+  text-decoration: none;
+}

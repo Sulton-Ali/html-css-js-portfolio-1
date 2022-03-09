@@ -1,0 +1,12 @@
+/* global styles */
+@import "./_constants.css";
+@import "./_settings.css";
+
+/* blocks */
+@import "./blocks/header.css";
+@import "./blocks/hero.css";
+@import "./blocks/stats.css";
+@import "./blocks/services.css";
+@import "./blocks/features.css";
+@import "./blocks/blog.css";
+@import "./blocks/footer.css";
