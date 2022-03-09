@@ -1,6 +1,6 @@
 /* global styles */
-@import "./_constants.css";
-@import "./_settings.css";
+@import "./constants.css";
+@import "./settings.css";
 
 /* blocks */
 @import "./blocks/header.css";
